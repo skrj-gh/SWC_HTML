@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.header {
+    height: 7.5vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    line-height: 7.5vh;
+    padding: 1.25vh 0 1.25vh 4.5vw;
+}
+
+.verBar1 {
+    height: 100%;
+    width: 2px;
+    z-index: 2;
+    background-color: #a1a1a1;
+    margin-left: 2vw;
+}
+
+h2{
+    font-weight: 700;
+    padding-left: 2vw;
+    margin-top: -1.25vh;
+    line-height: 7.5vh;
+    font-family: Verdana;
+}
+
+.logo {
+    height: 5vh;
+}
+
+.logo img {
+    height: 5vh;
+    border-radius: 5px;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 5vh;
+    margin: 1vh 0 0 1.25vh;
+    padding: 3px 5px 3px 1px;
+    background-color: #f3f3f3;
+    line-height: 5vh;
+    border-radius: 4vh;
+    position: relative;
+    float: right;
+    right: 3vw;
+}
+
+h3{
+    font-weight: 600;
+    padding-left: 20px;
+    font-family: Verdana;
+    color:#a1a1a1
+}
+
+.search {
+    height: 4vh;
+}
+
+.search img {
+    margin-top: 0.5vh;
+    margin-left: 0.9vh;
+    height: 4vh;
+}
+
+.sideSec {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #f7f7ff;
+    width: 44vw;
+    height: 100vh;
+}
+
+.verBar2 {
+    height: 100vh;
+    width: 2px;
+    z-index: 2;
+    background-color: #a1a1a1;
+}
+
+.sidebar div {
+    width: 80%;
+    height: 5vh;
+    margin-left: 20%;
+    margin-top: 1vh;
+}
+
+.sr {
+    width:85% !important;
+    height: 7vh !important;
+    margin-left: 15% !important;
+    margin-top: 10vh !important;
+    margin-bottom: 2vh;
+    border: 1px solid #a1a1a1;
+}
+
+.add {
+    width: 65% !important;
+    height: 6vh !important;
+    margin-top: 30vh !important;
+}
+
+.sr h4 {
+    background-color: #fff;
+    padding: 0 2vw 0 6.667%;
+    font-family: Verdana;
+    font-size: 2vh;
+    line-height: 7vh;
+    font-weight: 400;
+}
+
+.sidebar div p {
+    line-height: 10vh;
+    font-family: Verdana;
+}
+
+.add h4 {
+    padding: 0 2vw 0 6.667%;
+    font-family: Verdana;
+    font-size: 2vh;
+    line-height: 6vh;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 6vh;
+    border-radius: 1vh;
+}
+
+@media only screen and (min-width:500px){
+    .sidebar {
+        width: 37vw;
+    }
+}
+
+@media only screen and (min-width:720px){
+    .sidebar {
+        width: 30vw;
+    }
+}
+
+@media only screen and (min-width:980px){
+    .sidebar {
+        width: 25vw;
+    }
+}
+
+@media only screen and (min-width:1350px){
+    .sidebar {
+        width: 17.5vw;
+    }
+}
