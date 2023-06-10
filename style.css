@@ -13,6 +13,7 @@ body {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    position:fixed;
 }
 
 .flex1 {
@@ -103,16 +104,18 @@ input[type=text] {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #f7f7ff;
+    background-image: linear-gradient(to bottom, #ddddff , #fff);
     width: 44vw;
     height: 100vh;
 }
 
 .verBar2 {
-    height: 100vh;
+    height: 92.5vh;
     width: 2px;
     z-index: 2;
     background-color: #a1a1a1;
+    background-image: linear-gradient(to bottom, #767676 , #fff);
+    margin-top: 7.5vh;
 }
 
 .sidebar div {
@@ -131,10 +134,25 @@ input[type=text] {
     border: 1px solid #a1a1a1;
 }
 
+.sr:hover{
+    cursor:pointer;
+}
+
 .add {
     width: 65% !important;
     height: 6vh !important;
     margin-top: 30vh !important;
+    box-shadow: 0 2px #999;
+}
+
+.add:hover{
+    cursor:pointer;
+}
+
+.add:active{
+    cursor:text;
+    box-shadow: 0 0px #666;
+    transform: translateY(1px);
 }
 
 .sr h4 {
@@ -146,10 +164,25 @@ input[type=text] {
     font-weight: 400;
 }
 
+.sr h4:active{
+    cursor:pointer;
+    background-color: #cbcbcb65;
+}
+
 .sidebar div p {
     line-height: 8vh;
     font-family: Verdana;
     font-size: 1.5vh;
+}
+
+.sidebar div p:hover{
+    cursor:pointer;
+    background-color: #d1d1fc70;
+}
+
+.sidebar div p:active{
+    cursor:pointer;
+    background-color: #cbcbcb65;
 }
 
 .add h4 {
@@ -170,28 +203,51 @@ input[type=text] {
     display: grid;
     grid-template-columns: 70vw;
     margin-top: 2vh;
+    padding-top: 5.5vh;
     margin-left: 5.5vw;
     column-gap: 0vw;
     row-gap: 5vh;
 }
 
-.mov {
+.mov1 {
     width: 65vw;
     height: 50vh;
-    background-color: rgba(84, 148, 231, 0.752);
     overflow: hidden;
-    background-image: url("jw4.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mov1:hover{
+    cursor: pointer;
+    width:99%;
+    height: 99%;
+}
+
+.mov1:active{
+    cursor: pointer;
+    opacity:0.9
+}
+
+.mov1{
+    height: 100%;
+    width: 100%;
+}
+
+.mov1 img {
+    height:100%;
+    width: 100%;
 }
 
 .bg {
-    background-image: linear-gradient(to top, #000 , #0000001c);
+    background-image: linear-gradient(to top, #000 , #00000021);
     height: 50%;
+    margin-top: 85%;
 }
 
 .cat{
-    margin-top: 85%;
     margin-left: 8%;
+    padding-left:1vw;
+    border-radius: 0.6vw;
     font-family: Verdana;
     font-weight: 400;
     font-size: 2.2vh;
@@ -200,12 +256,17 @@ input[type=text] {
     background-color: #3e3e3eb2;
 }
 
+.bg:hover {
+    height: 70%;
+    margin-top: 75%;
+}
+
 .rat{
     margin-left: 8%;
     margin-top:2%;
     font-family: Verdana;
     font-weight: 400;
-    font-size: 4.3vh;
+    font-size: 2.3vh;
     color:#fff;
 }
 
@@ -225,9 +286,11 @@ input[type=text] {
     .sidebar {
         width: 37vw;
     }
-
-    .cat{
+    .bg{
         margin-top: 65%;
+    }
+    .cat{
+        
         margin-left: 8%;
         font-family: Verdana;
         font-weight: 400;
@@ -237,8 +300,12 @@ input[type=text] {
 
     input[type=text] {
         padding-left:5vw;
-      }
-    
+    }
+
+    .bg:hover {
+        height: 70%;
+        margin-top: 55%;
+    }
 }
 
 @media only screen and (min-width:720px){
@@ -279,7 +346,6 @@ input[type=text] {
     }
 
     .cat{
-        margin-top: 85%;
         margin-left: 8%;
         font-family: Verdana;
         font-weight: 400;
@@ -288,6 +354,14 @@ input[type=text] {
         width:38%;
     }
     
+    .bg{
+        margin-top: 85%;
+    }
+
+    .bg:hover {
+        height: 70%;
+        margin-top: 75%;
+    }
 }
 
 @media only screen and (min-width:980px){
@@ -332,7 +406,6 @@ input[type=text] {
     }
 
     .cat{
-        margin-top: 65%;
         margin-left: 8%;
         font-family: Verdana;
         font-weight: 400;
@@ -345,7 +418,14 @@ input[type=text] {
         padding-left:4vw;
       }
     
+    .bg:hover {
+        height: 70%;
+        margin-top: 55%;
+    }
     
+    .bg{
+        margin-top: 65%;
+    }
 }
 
 @media only screen and (min-width:1350px){
@@ -377,11 +457,19 @@ input[type=text] {
     }
 
     .cat{
-        margin-top: 74%;
         margin-left: 8%;
         font-family: Verdana;
         font-weight: 400;
         font-size: 2.2vh;
         opacity: 1;
+    }
+
+    .bg{
+        margin-top: 74%;
+    }
+
+    .bg:hover {
+        height: 70%;
+        margin-top: 64%;
     }
 }

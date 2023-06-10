@@ -11,7 +11,7 @@
         <div class="header">
 
             <div class="flex1">
-                <div class="logo"><img src="swc.jpg"alt="SWC"></div>
+                <div class="logo"><a href="index.html"><img src="swc.jpg"alt="SWC"></a></div>
                 <div><h2>Movies</h2></div>
                 <div class="verBar1"></div>
             </div>
@@ -19,15 +19,18 @@
             <div class="flex2">
                 <!-- <div class="search"><img src="search.jpg"alt="Search"></div> -->
                 <div class="qs"><h3>
-                    <form>
-                        <input type="text" name="search" placeholder="Quick Search" onclick="searchL()">
+                    <form id="form">
+                        <input type="text"
+                        name="search" 
+                        id="search"
+                        placeholder="Quick Search" onclick="searchL()">
                     </form>
                 </h3></div>
             </div>
 
         </div>
     </nav>
-
+    
     <section class="sideSec">
         <div  class="sidebar">
             <div class="sr"><h4>Search Results</h4></div>
@@ -41,52 +44,12 @@
         </div>
         <div class="verBar2"></div>
 
-        <section class="cards">
-            <div class="mov">
-                <div class="bg">
-                    <div class="cat">Category</div>
-                    <div class="rat">*****</div>
-                    <div class="nameM">Name of the movie</div>
-                </div>
-            </div>
-
-            <div class="mov">
-                <div class="bg">
-                    <div class="cat">Category</div>
-                    <div class="rat">*****</div>
-                    <div class="nameM">Name of the movie</div>
-                </div>
-            </div>
-
-            <div class="mov">
-                <div class="bg">
-                    <div class="cat">Category</div>
-                    <div class="rat">*****</div>
-                    <div class="nameM">Name of the movie</div>
-                </div>
-            </div>
-
-            <div class="mov">
-                <div class="bg">
-                    <div class="cat">Category</div>
-                    <div class="rat">*****</div>
-                    <div class="nameM">Name of the movie</div>
-                </div>
-            </div>
-
-            <div class="mov">
-                <div class="bg">
-                    <div class="cat">Category</div>
-                    <div class="rat">*****</div>
-                    <div class="nameM">Name of the movie</div>
-                </div>
-            </div>
-
-            <div class="mov">
-                <div class="bg">
-                    <div class="cat">Category</div>
-                    <div class="rat">*****</div>
-                    <div class="nameM">Name of the movie</div>
+        <section class="cards" id="cards">
+            <div class="mov" id="mov">
+                <div class="mov1">
+                    <div class="bg" id='bg'>
+                        <div class="cat"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -97,9 +60,5 @@
     </section>
 </body>
 
-<script>
-    function searchL() {
-        
-    }
-</script>
+<script src="main.js"></script>
 </html>
